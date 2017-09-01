@@ -1,0 +1,17 @@
+{
+    "name": "Matchinggame",
+    "alias": "matchinggame",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 1,
+    "providers": [
+        "Modules\\Matchinggame\\Providers\\MatchinggameServiceProvider",
+        "Modules\\Matchinggame\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        
+    ],
+    "requires": []
+}
