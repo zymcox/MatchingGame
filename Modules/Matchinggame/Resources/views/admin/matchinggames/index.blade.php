@@ -29,6 +29,12 @@
                         <table class="data-table table table-bordered table-hover">
                             <thead>
                             <tr>
+                                <th>Activated</th>
+                                <th>Name</th>
+                                <th>Desc.</th>
+                                <th>Prio</th>
+                                <th>From date</th>
+                                <th>To date</th>
                                 <th>{{ trans('core::core.table.created at') }}</th>
                                 <th data-sortable="false">{{ trans('core::core.table.actions') }}</th>
                             </tr>
@@ -37,6 +43,24 @@
                             <?php if (isset($matchinggames)): ?>
                             <?php foreach ($matchinggames as $matchinggame): ?>
                             <tr>
+                                <td>
+                                    {{ $matchinggame->theme_active == 1 ? 'Yes' : 'No' }}
+                                </td>
+                                <td>
+                                    {{ $matchinggame->name }}
+                                </td>
+                                <td>
+                                    {{ $matchinggame->description }}
+                                </td>
+                                <td>
+                                    {{ $matchinggame->prio }}
+                                </td>
+                                <td>
+                                    {{ $matchinggame->from_date }}
+                                </td>
+                                <td>
+                                    {{ $matchinggame->to_date }}
+                                </td>
                                 <td>
                                     <a href="{{ route('admin.matchinggame.matchinggame.edit', [$matchinggame->id]) }}">
                                         {{ $matchinggame->created_at }}
@@ -54,6 +78,12 @@
                             </tbody>
                             <tfoot>
                             <tr>
+                                <th>Activated</th>
+                                <th>Name</th>
+                                <th>Desc.</th>
+                                <th>Prio</th>
+                                <th>From date</th>
+                                <th>To date</th>
                                 <th>{{ trans('core::core.table.created at') }}</th>
                                 <th>{{ trans('core::core.table.actions') }}</th>
                             </tr>

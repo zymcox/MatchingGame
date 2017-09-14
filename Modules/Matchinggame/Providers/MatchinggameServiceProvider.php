@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Modules\Core\Traits\CanPublishConfiguration;
 use Modules\Core\Events\BuildingSidebar;
 use Modules\Matchinggame\Events\Handlers\RegisterMatchinggameSidebar;
+use Modules\Media\Image\ThumbnailManager;
 
 class MatchinggameServiceProvider extends ServiceProvider
 {
@@ -33,6 +34,17 @@ class MatchinggameServiceProvider extends ServiceProvider
         $this->publishConfig('matchinggame', 'permissions');
 
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+
+        $this->app[ThumbnailManager::class]->registerThumbnail('miniProfileThumb', [
+            'resize' => [
+                'width' => 100,
+                'height' => null,
+                'callback' => function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                },
+            ],
+        ]);
     }
 
     /**
