@@ -44,22 +44,34 @@
                             <?php foreach ($matchinggames as $matchinggame): ?>
                             <tr>
                                 <td>
-                                    {{ $matchinggame->theme_active == 1 ? 'Yes' : 'No' }}
+                                    <a href="{{ route('admin.matchinggame.matchinggame.edit', [$matchinggame->id]) }}">
+                                        {{ $matchinggame->theme_active == 1 ? 'Yes' : 'No' }}
+                                    </a>
                                 </td>
                                 <td>
-                                    {{ $matchinggame->name }}
+                                    <a href="{{ route('admin.matchinggame.matchinggame.edit', [$matchinggame->id]) }}">
+                                        {{ $matchinggame->name }}
+                                    </a>
                                 </td>
                                 <td>
-                                    {{ $matchinggame->description }}
+                                    <a href="{{ route('admin.matchinggame.matchinggame.edit', [$matchinggame->id]) }}">
+                                       {{ $matchinggame->description }}
+                                    </a>
                                 </td>
                                 <td>
-                                    {{ $matchinggame->prio }}
+                                    <a href="{{ route('admin.matchinggame.matchinggame.edit', [$matchinggame->id]) }}">
+                                        {{ $matchinggame->prio }}
+                                    </a>  
                                 </td>
                                 <td>
-                                    {{ $matchinggame->from_date }}
+                                    <a href="{{ route('admin.matchinggame.matchinggame.edit', [$matchinggame->id]) }}">
+                                        {{ $matchinggame->from_date }}
+                                    </a>
                                 </td>
                                 <td>
-                                    {{ $matchinggame->to_date }}
+                                    <a href="{{ route('admin.matchinggame.matchinggame.edit', [$matchinggame->id]) }}">
+                                        {{ $matchinggame->to_date }}
+                                    </a>
                                 </td>
                                 <td>
                                     <a href="{{ route('admin.matchinggame.matchinggame.edit', [$matchinggame->id]) }}">

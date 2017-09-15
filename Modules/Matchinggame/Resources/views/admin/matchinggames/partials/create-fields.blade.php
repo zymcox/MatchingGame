@@ -51,7 +51,6 @@
     </div>
     <div class="row">
         <div class="col-sm-6">
-         @mediaSingle('bkg_image', null, null, 'bakgrundsbild')
             {!! Form::normalSelect('bkg_image', 'Stor bakgrundsbild', $errors, $images) !!}
         </div>
         <div class="col-sm-6">
