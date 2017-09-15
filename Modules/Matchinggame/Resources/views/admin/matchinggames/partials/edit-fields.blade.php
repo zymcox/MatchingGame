@@ -1,5 +1,5 @@
 <div class="box-body">
-    <? $images = array('Ingen vald','bild1', 'bild2', 'bild4', 'annan-bild') ?>
+    <? $images = array('Ingen vald','bild1', 'bild2', 'bild4', 'bild6','bild7','bild8','bild9','bild10','bild11','bild12','bild13','bild14','bild15','bild16','bild17','bild18','bild19','bild20','bild21','bild22','bild24','bild26','bild25','bild27','bild28','bild29','bild30','annan-bild') ?>
     <div class="row">
         <div class="col-sm-2">
             {!! Form::normalCheckbox('theme_active', 'Aktivt tema', $errors, $matchinggame) !!}
