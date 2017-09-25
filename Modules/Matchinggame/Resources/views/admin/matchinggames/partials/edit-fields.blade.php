@@ -47,7 +47,8 @@
     </div>
     <div class="row">
         <div class="col-sm-6">
-            {!! Form::normalSelect('bkg_image', 'Stor bakgrundsbild', $errors, $images, $matchinggame) !!} 
+            {!! Form::normalSelect('bkg_image', 'Stor bakgrundsbild', $errors, $images, $matchinggame) !!}
+            
         </div>
         <div class="col-sm-6">
         </div>

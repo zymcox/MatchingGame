@@ -1,0 +1,156 @@
+
+
+.gameboard {
+    line-height: 0;
+    border-spacing: 0;
+}
+
+.gameboard td {
+    padding: 0;
+}
+
+
+
+.parent {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.hiddenimage {
+    position: relative;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+
+.imagepos0 {
+    position: absolute;
+    z-index: 4;
+    left: 0px;
+    top: 0px;
+}
+.imagepos1 {
+    position: absolute;
+    z-index: 4;
+    left: 170px;
+    top: 0px;
+}
+.imagepos2 {
+    position: absolute;
+    z-index: 4;
+    left: 340px;
+    top: 0px;
+}
+.imagepos3 {
+    position: absolute;
+    z-index: 4;
+    left: 510px;
+    top: 0px;
+}
+.imagepos4 {
+    position: absolute;
+    z-index: 4;
+    left: 680px;
+    top: 0px;
+}
+
+
+.imagepos5 {
+    position: absolute;
+    z-index: 4;
+    left: 0px;
+    top: 170px;
+}
+.imagepos6 {
+    position: absolute;
+    z-index: 4;
+    left: 170px;
+    top: 170px;
+}
+.imagepos7 {
+    position: absolute;
+    z-index: 4;
+    left: 340px;
+    top: 170px;
+}
+.imagepos8 {
+    position: absolute;
+    z-index: 4;
+    left: 510px;
+    top: 170px;
+}
+.imagepos9 {
+    position: absolute;
+    z-index: 4;
+    left: 680px;
+    top: 170px;
+}
+
+
+.imagepos10 {
+    position: absolute;
+    z-index: 4;
+    left: 0px;
+    top: 340px;
+}
+.imagepos11 {
+    position: absolute;
+    z-index: 4;
+    left: 170px;
+    top: 340px;
+}
+.imagepos12 {
+    position: absolute;
+    z-index: 4;
+    left: 340px;
+    top: 340px;
+}
+.imagepos13 {
+    position: absolute;
+    z-index: 4;
+    left: 510px;
+    top: 340px;
+}
+.imagepos14 {
+    position: absolute;
+    z-index: 4;
+    left: 680px;
+    top: 340px;
+}
+
+
+.imagepos15 {
+    position: absolute;
+    z-index: 4;
+    left: 0px;
+    top: 510px;
+}
+.imagepos16 {
+    position: absolute;
+    z-index: 4;
+    left: 170px;
+    top: 510px;
+}
+.imagepos17 {
+    position: absolute;
+    z-index: 4;
+    left: 340px;
+    top: 510px;
+}
+.imagepos18 {
+    position: absolute;
+    z-index: 4;
+    left: 510px;
+    top: 510px;
+}
+.imagepos19 {
+    position: absolute;
+    z-index: 4;
+    left: 680px;
+    top: 510px;
+}
+
+
+
+

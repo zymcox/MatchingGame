@@ -1,9 +1,4 @@
 <div class="box-body">
-    
-    
-    <? $images = array('Ingen vald','bild1', 'bild2', 'bild4', 'annan-bild') ?>
-    
-
     <div class="row">
         <div class="col-sm-2">
             {!! Form::normalCheckbox('theme_active', 'Aktivt tema', $errors) !!}
@@ -51,51 +46,51 @@
     </div>
     <div class="row">
         <div class="col-sm-6">
-            {!! Form::normalSelect('bkg_image', 'Stor bakgrundsbild', $errors, $images) !!}
+            @mediaSingle('bkg_image', null, null, 'Stor bakgrundsbild')
         </div>
         <div class="col-sm-6">
         </div>
     </div>
     <div class="row">
         <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_0', 'Bild 1', $errors, $images) !!}
+             @mediaSingle('match_image_0', null, null, 'Bild 1')
         </div>
         <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_1', 'Bild 2', $errors, $images) !!}
+             @mediaSingle('match_image_1', null, null, 'Bild 2')
         </div>
         <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_2', 'Bild 3', $errors, $images) !!}
+             @mediaSingle('match_image_2', null, null, 'Bild 3')
         </div>
         <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_3', 'Bild 4', $errors, $images) !!}
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_4', 'Bild 5', $errors, $images) !!}
-        </div>
-        <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_5', 'Bild 6', $errors, $images) !!}
-        </div>
-        <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_6', 'Bild 7', $errors, $images) !!}
-        </div>
-        <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_7', 'Bild 8', $errors, $images) !!}
+             @mediaSingle('match_image_3', null, null, 'Bild 4')
         </div>
     </div>
     <div class="row">
         <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_8', 'Bild 9', $errors, $images) !!}
+             @mediaSingle('match_image_4', null, null, 'Bild 5')
         </div>
         <div class="col-sm-3">
-            {!! Form::normalSelect('match_image_9', 'Bild 10', $errors, $images) !!}
+             @mediaSingle('match_image_5', null, null, 'Bild 6')
         </div>
         <div class="col-sm-3">
-            {!! Form::normalSelect('cover_image', 'Täckbild', $errors, $images) !!}
+             @mediaSingle('match_image_6', null, null, 'Bild 7')
         </div>
         <div class="col-sm-3">
-            {!! Form::normalSelect('video', 'Video', $errors, $images) !!}
+             @mediaSingle('match_image_7', null, null, 'Bild 8')
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+             @mediaSingle('match_image_8', null, null, 'Bild 9')
+        </div>
+        <div class="col-sm-3">
+             @mediaSingle('match_image_9', null, null, 'Bild 10')
+        </div>
+        <div class="col-sm-3">
+             @mediaSingle('cover_image', null, null, 'Täckbild')
+        </div>
+        <div class="col-sm-3">
+            @mediaSingle('video', null, null, 'Video')
         </div>
     </div>
 
