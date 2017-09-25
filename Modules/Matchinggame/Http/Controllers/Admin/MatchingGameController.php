@@ -32,6 +32,7 @@ class MatchingGameController extends AdminBaseController
     public function index()
     {
         $matchinggames = $this->matchinggame->all();
+        
         return view('matchinggame::admin.matchinggames.index', compact('matchinggames'));
     }
 
@@ -42,6 +43,7 @@ class MatchingGameController extends AdminBaseController
      */
     public function create()
     {
+       
         return view('matchinggame::admin.matchinggames.create');
     }
 

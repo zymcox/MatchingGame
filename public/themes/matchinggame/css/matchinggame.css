@@ -1,5 +1,16 @@
 
 
+body {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    background-color: #000000;
+}
+
+html {
+    text-align: center;
+  }
+
 .gameboard {
     line-height: 0;
     border-spacing: 0;
