@@ -22,7 +22,7 @@
     </div>
     <div class="row">
         <div class="col-sm-3">
-            {!! Form::normalSelect('prio', 'Prioritet', $errors, array('Låg', 'Medium', 'Hög')) !!}
+            {!! Form::normalSelect('prio', 'Prioritet', $errors, array('Välj...', 'Låg', 'Medium', 'Hög')) !!}
         </div>
         <div class="col-sm-3">
             <div class="form-group">

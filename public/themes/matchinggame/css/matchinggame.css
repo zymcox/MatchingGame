@@ -1,14 +1,9 @@
-
-
-body {
-    display: inline-block;
-    margin: 0px auto;
-    text-align: center;
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
     background-color: #000000;
-}
-
-html {
-    text-align: center;
+    transform: translate(-50%, -50%);
   }
 
 .gameboard {

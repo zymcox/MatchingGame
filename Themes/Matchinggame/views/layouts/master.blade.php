@@ -6,7 +6,7 @@
    
     <link href="{{ asset('themes/matchinggame/css/matchinggame.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="centered">
     @yield('content')
 </body>
 <script type="application/javascript" src="{{ asset('themes/matchinggame/js/angular.min.js') }}"></script>
